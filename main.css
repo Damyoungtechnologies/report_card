@@ -11,6 +11,7 @@ body{
 /* This is the first section of the card */
 /* This is the frame for the report card */
 .card_frame{
+    max-width: 100%;
     width: 50%;
     padding: 40px 10px;
     background: white;
