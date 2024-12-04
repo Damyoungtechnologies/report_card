@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 20px;
+    background: rgb(59, 59, 59);
+    display: grid;
+    place-items: center;
+}
+/* This is the first section of the card */
+/* This is the frame for the report card */
+.card_frame{
+    width: 50%;
+    padding: 40px 10px;
+    background: white;
+    /* height: 90vh; */
+    box-shadow: 0px 3px 5px 0px rgb(3, 3, 3), 0px 8px 12px 0px rgb(33, 33, 33);
+    /* This is to centralize the frame */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+/* This section is the inner framne with tree border */
+.card_frame .inner_frame{
+    width: 90%;
+    border: 9px solid transparent;
+    /* height: 80vh; */
+    border-image-source: url(images/border_image.png);
+    border-image-slice: 60;
+    border-image-width: 15px;
+    border-image-outset: 2;
+    border-image-repeat: round;
+    box-sizing: border-box;
+    padding: 10px;
+}
+/* This is the header section of the card */
+.card_frame header{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.card_frame .logo img{
+    width: 80px;
+
+}
+.card_frame .logo{
+    flex: .5;
+}
+.card_frame .header_writeup{
+    flex: 3;
+    text-align: center;  /* This helps to align the texts to the center */
+}
+/* This is the style for the writeups inside the .header_writeup */
+.card_frame .header_writeup h4{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.card_frame .header_writeup p{
+    font-size: .7rem;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+.card_frame .header_writeup .address{
+    color: red;
+}
+.card_frame .header_writeup .preschool{
+    color: blue;
+}
+.card_frame .header_writeup .preschool span{
+    color: red;
+}
+/* This is the first line after the header */
+.second_header{
+    display: flex;
+    font-size: .7rem;
+    gap: .7rem;
+    font-weight: bolder;
+}
+.second_header .first_column{
+    color: brown;
+}
+.second_header .second_column{
+    color: orange;
+}
+.second_header .third_column .line1{
+    color: blue;
+}
+.second_header .third_column .line2{
+    color: green;
+}
+/* This is the second line after the header */
+.third_header{
+    gap: 3rem;
+}
+.second_header div p{
+    margin: 5px 0px; /* This is to give top and bottom space between the paragraphs in the divs */
+}
+.third_header .first_column .line1{
+    color: rgb(2, 45, 69);
+}
+.third_header .first_column .line2{
+    color: rgb(0, 196, 255);
+}
+.third_header .second_column{
+    color: purple;
+}
+.third_header .third_column .line1{
+    color: brown;
+}
+.third_header .third_column .line2{
+    color: red;
+}
+/* This is the table section  */
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    font-size: .8rem;
+    padding: 8px;
+}
+td svg{
+    width: 10px;
+    height: 10px;
+}
+/* This is the section after the table */
+.teacher_comment{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+.teacher_comment img{
+    width: 40px;
+}
+.teacher_comment p{
+    font-size: .8rem;
+    font-weight: bolder;
+    color: brown;
+}
+/* This is the remark of the student */
+.remark{
+    color: green;
+    font-size: .7rem;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+/* This is the remark_percentage of the student */
+.remark_percentage{
+    font-size: .7rem;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+/* This is the next term */
+.term{
+    font-style: italic;
+    font-size: .7rem;
+    font-weight: bold;
+}
+/* This is the stamp */
+.stamp img{
+    margin: 10px 0px 3px 0px;
+    width: 150px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+.signature{
+    color: purple;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+/* This is the second section of the card */
