@@ -35,6 +35,22 @@ body{
     box-sizing: border-box;
     padding: 10px;
 }
+/* This is to place the logo inside the inner frame */
+.card_frame .inner_frame::before{
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/logo.png);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 0;
+}
+
 /* This is the header section of the card */
 .card_frame header{
     display: flex;
@@ -175,3 +191,33 @@ td svg{
 }
 
 /* This is the second section of the card */
+/* The section below is used to remove border around line 8 and 9 of the second table */
+.second_table .noborder1 th, .second_table .noborder1 td{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.second_table .noborder2 th, .second_table .noborder2 td{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+/* This is the styling for the payment guide section after the second table */
+.payment_guide{
+    margin-top: 20px;
+}
+.payment_guide p{
+    margin: 10px 0px;
+    font-size: .8rem;
+}
+/* This is third section of the card */
+.header_writeup .newsletter{
+    text-decoration: underline;
+}
+
+/* This is the fourth section of the card */
+.last_text{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0px;
+}
