@@ -144,6 +144,9 @@ td svg{
     width: 10px;
     height: 10px;
 }
+table .red{
+    color: red;
+}
 /* This is the section after the table */
 .teacher_comment{
     display: flex;
